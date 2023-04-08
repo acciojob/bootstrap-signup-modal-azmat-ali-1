@@ -1,1 +1,29 @@
 /*  your css code here. If applicable */
+   .container button{
+            color: white;
+            background-color: red;
+            border:none;
+            border-radius: 7px;
+            padding: 10px;
+        }
+        .model{
+            position: absolute;
+            top: 20px;
+            left: 100px;
+            background-color: gray;
+            visibility: hidden;
+        }
+        form{
+            padding: 40px;
+        }
+        h4{
+            border-bottom: 1px solid black;
+        }
+        .inner .btn{
+            border-top: 1px solid black;
+            text-align: end;
+            padding: 10px;
+        }
+        .container .sign:hover~.model{
+           visibility: visible;
+        }

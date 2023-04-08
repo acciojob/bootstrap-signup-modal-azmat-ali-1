@@ -1,16 +1,67 @@
 <!DOCTYPE html>
-
-<html>
-
+<html lang="en">
 <head>
-	<link rel="stylesheet" href="styles.css">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container button{
+            color: white;
+            background-color: red;
+            border:none;
+            border-radius: 7px;
+            padding: 10px;
+        }
+        .inner{
+            position: absolute;
+            top: 20px;
+            left: 100px;
+            background-color: gray;
+            visibility: hidden;
+        }
+        form{
+            padding: 40px;
+        }
+        h4{
+            border-bottom: 1px solid black;
+        }
+        .inner .btn{
+            border-top: 1px solid black;
+            text-align: end;
+            padding: 10px;
+        }
+        .container .sign:hover~.inner{
+           visibility: visible;
+        }
+    </style>
 </head>
-
 <body>
-	<!-- the entire body must be written by student -->
-    <script type="text/javascript" src="./script.js">
-</script>
+    
+<div class="container">
+    <button class="sign">Sign Up</button>
+    <div class="inner">
+        <h4>Create An Account</h4>
+        <form >
+            <label for="">Email address</label>
+            <br>
+            <input type="text" placeholder="Enter Email">
+            <br>
+            <br>
+            <label for="">Password</label>
+            <br>
+            <input type="password" required placeholder="Password">
+            <br>
+            <br>
+            <label for="">Confirm Password<label>
+            <br>
+            <input type="password" required placeholder="Password">
+        </form>
+        <br>
+        <br>
+       <div class="btn"> <button>Submit</button></div>
+    </div>
+</div>
 
 </body>
-
 </html>
